@@ -1,9 +1,9 @@
-import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
+import { CiLocationOn, CiPhone, CiMail } from "react-icons/ci";
 
 const ContactUsSection = () => {
   return (
     <div
-      id="#services"
+      id="services"
       className="bg-white flex items-center justify-center flex-col py-28 gap-16"
     >
       <div className="flex items-start justify-center md:justify-start flex-col gap-6 text-center md:pr-16 ">
@@ -16,7 +16,7 @@ const ContactUsSection = () => {
         </h2>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row md:h-[500px] w-full md:px-36 px-6">
+      <div className="flex flex-col-reverse md:flex-row md:h-[700px] w-full md:px-36 px-6">
         <div className="bg-primary w-full h-full rounded-b-2xl md:rounded-l-2xl md:rounded-br-none overflow-hidden flex flex-col py-8">
           <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-12 md:gap-6 md:pl-5">
             <div className="flex flex-col justify-center items-center gap-6 flex-1 px-4">
@@ -28,7 +28,7 @@ const ContactUsSection = () => {
                 <h3 className="text-white text-2xl font-semibold">Location</h3>
               </div>
               <p className="text-white text-sm font-light text-center max-w-xl">
-              Dubai,UAE
+                Dubai, UAE
               </p>
             </div>
             <div className="flex flex-col items-center justify-center gap-6 flex-1 px-4">
@@ -76,10 +76,75 @@ const ContactUsSection = () => {
             </ul>
           </div>
         </div>
-        <iframe
-          className="w-full h-[400px] md:h-full rounded-t-2xl md:rounded-r-2xl md:rounded-tl-none overflow-hidden"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D8%A2%D8%AF%D9%85%20%D9%81%D8%B1%D9%85%D8%B3%D8%AA%D9%83%D9%84%20%D8%B3%D8%B1%D9%81%D8%B3%D8%B2+(Adam%20Pharmaceuticals%20Services)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        />
+
+        <div className="flex flex-col justify-center items-center w-full bg-white p-8 rounded-t-2xl md:rounded-r-2xl md:rounded-tl-none shadow-lg">
+          <h2 className="text-primary font-bold text-3xl mb-6">Contact Us</h2>
+          <form className="w-full max-w-lg">
+            <div className="mb-4">
+              <label
+                className="block text-primary text-sm font-bold mb-2"
+                htmlFor="name"
+              >
+                Name
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
+                type="text"
+                placeholder="Your name"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-primary text-sm font-bold mb-2"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Your email"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-primary text-sm font-bold mb-2"
+                htmlFor="subject"
+              >
+                Subject
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="subject"
+                type="text"
+                placeholder="Subject"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-primary text-sm font-bold mb-2"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <div className="flex items-center justify-center">
+              <button
+                className="bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-700 transition duration-300"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
