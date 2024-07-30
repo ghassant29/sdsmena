@@ -1,3 +1,4 @@
+import { LegacyRef } from "react";
 import { Link } from "react-router-dom";
 import { useHome } from "../context/providers/homepage.provider";
 import useMobile from "../hooks/useMobile";
