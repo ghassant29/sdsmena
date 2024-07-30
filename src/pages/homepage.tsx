@@ -7,7 +7,7 @@ import { useHome } from "../context/providers/homepage.provider";
 import Page from "../layouts/page";
 
 const Homepage = () => {
-  const { aboutRef, contactRef, heroRef, productsRef, servicesRef } = useHome();
+  const { aboutRef, contactRef, heroRef, productsRef } = useHome();
 
   return (
     <Page>
