@@ -22,11 +22,10 @@ const Navbar = ({ onlyHome }: Props) => {
     ? [{ id: "/", text: "Home" }]
     : [
         { id: "#hero", text: "Home" },
-        // { id: "#services", text: "Services" },
         { id: "#products", text: "Products" },
         { id: "#about", text: "About" },
-        // { id: "#contact", text: "Our Location" },
-        { id: "#contact", text: "Contact" },
+        { id: "/products", text: "All Products", type: "link" },
+        { id: "#contact", text: "Contact" }
       ];
 
   return (

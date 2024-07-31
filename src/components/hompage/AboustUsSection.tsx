@@ -1,4 +1,5 @@
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const AboustUsSection = () => {
   return (
@@ -47,9 +48,9 @@ const AboustUsSection = () => {
           </div>
           <div className="flex items-center">
             <img
-              src="/images/3m-logo.png"
+              src="./3M_wordmark.png"
               alt="3M Logo"
-              className="w-16 h-16 mr-4"
+              className="w-13 h-7 mr-4"
             />
             <p className="text-black md:text-lg font-light">
               Authorized Specialist Dealer
@@ -57,12 +58,12 @@ const AboustUsSection = () => {
           </div>
         </div>
         <div className="mt-6">
-          <a
-            href="#"
+          <Link
+            to="/aboutus_page"
             className="inline-block px-8 py-3 bg-blue-600 text-white text-lg font-bold rounded-md shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
           >
             More About Us
-          </a>
+          </Link>
         </div>
       </div>
     </div>

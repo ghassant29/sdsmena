@@ -161,55 +161,83 @@ Suitable for special paints, varnishes and coatings.</p> `,
   },
   {
     name: "Anilox Cleaner M",
-    description: "<p></p>",
+    description: `<strong>Highly effective anilox roller cleaner for all common ink types</strong>
+<p>Thorough deep cleaning without damaging the surfaces</p>
+<p>Removes solvent-, water-, and UV-based paint types</p>
+<p>Highly economical cleaning process</p>
+<p>Optimum cell volume of your anilox rollers</p>
+<p>PH-neutral and biodegradable</p>
+<p>No chemical dissolution</p>
+<p>Flash point above 95°C</p>
+
+`,
     image: "/products/aniloxcleanerm.jpg",
     productId: "aniloxcleanerm",
   },
   {
     name: "Anilox Cleaner C",
-    description: "<p></p>",
+    description: `<h1>Powerful cleaning gel for your anilox rollers</h1>
+<p>Application as manual cleaner</p>
+<p>Concentration especially for cleaning anilox rollers</p>
+<p>Complete deep cleaning against all common ink types</p>
+`,
     image: "/products/anilox-cleaner.png",
     productId: "aniloxcleanerc",
   },
   {
     name: "3M Splicing Tape 7387 SFS",
-    description: "<p></p>",
+    description: `<p>For splicing film and foil webs at process speeds</p>
+<p>For on-the-fly reel changes</p>
+<p>Splicing leaves no residue</p>
+<p>No cleaning of fiber residues required</p>
+`,
     image: "/products/splicingtape1.webp",
     productId: "3MSplicingTape7387SFS",
   },
   {
     name: "3M Splicing Tape 9353R",
-    description: "<p></p>",
+    description: `<strong>3M Splicing Tape 9353R</strong>
+<p>Water-dispersible splicing tape for flying roll changes</p>
+<p>The 3M splicing tape 9353 is a splittable adhesive tape for flying roll changes with a straight joint when splicing. It is equipped with a double-sided coating of water-soluble acrylic adhesive and an easily removable protective paper (also repulpable). A score line in the protective paper facilitates manual application.</p>
+<p>Dimensions 50 mm x 33 m</p>
+`,
     image: "/products/splicingtape2.png",
     productId: "3MSplicingTape9353R",
   },
   {
     name: "3M Splicing Tape 8387",
-    description: "<p></p>",
+    description: `<h1>Cellulose-free adhesive tape for reliable splicing of film webs with flying roll changes in flexographic printing</h1>
+<p>The tape is characterized by a high adhesive strength and was developed to safely splice film types such as BOPP, PE, and aluminium. It is multi-colored and makes it possible to clearly identify the splice components. It has high light and temperature resistance and is resistant to moisture and many chemicals.</p>
+<p>Dimensions 50 mm x 50 m</p>
+`,
     image: "/products/splicingtape3.png",
     productId: "3MSplicingTape8387",
   },
   {
     name: "Premium",
-    description: "<p></p>",
+    description: `<p>Our premium doctor blade for gravure printing impresses with its unique surface treatment in terms of service life and print quality. The excellent bond between steel and coating offers maximum wear resistance. Our premium doctor blade reduces scumming and streaking, avoids waste and delivers outstanding printing results while protecting the anilox roller at the same time.</p>`,
     image: "/products/premium.png",
     productId: "premium",
   },
   {
     name: "Gold",
-    description: "<p></p>",
+    description:
+      "<p>Our Gold doctor blade is the first choice when it comes to exceptional wear resistance. The special microstructure of the Gold doctor blade enables a significant service life and is resistant to all types of abrasive inks and varnishes. The high quality alloy of the Gold doctor blade also enables a very high print quality, a short run-in time and is very gentle on the anilox roller due to its flexible nature.</p>",
     image: "/products/gold.png",
     productId: "gold",
   },
   {
     name: "Plastic",
-    description: "<p></p>",
+    description: `<p>The plastic doctor blade is the innovative and durable doctor blade from SDS.
+
+It is used for complex printing and coating applications, especially when conventional doctor blades can no longer meet the requirements.</p>`,
     image: "/products/plastic.png",
     productId: "plastic",
   },
   {
     name: "Carbon",
-    description: "<p></p>",
+    description:
+      "<p>Our carbon doctor blade made of European carbon steel is the reliable all-rounder for numerous printing applications. The intelligent material composition and special surface treatment ensure a very long service life, precise doctoring and a high level of user-friendliness.</p>",
     image: "/products/carbon.png",
     productId: "carbon",
   },

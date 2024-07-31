@@ -1,4 +1,5 @@
 import { CiLocationOn, CiPhone, CiMail } from "react-icons/ci";
+import ContactUsForm from "./ContactUsForm";
 
 const ContactUsSection = () => {
   return (
@@ -79,71 +80,7 @@ const ContactUsSection = () => {
 
         <div className="flex flex-col justify-center items-center w-full bg-white p-8 rounded-t-2xl md:rounded-r-2xl md:rounded-tl-none shadow-lg">
           <h2 className="text-primary font-bold text-3xl mb-6">Contact Us</h2>
-          <form className="w-full max-w-lg">
-            <div className="mb-4">
-              <label
-                className="block text-primary text-sm font-bold mb-2"
-                htmlFor="name"
-              >
-                Name
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name"
-                type="text"
-                placeholder="Your name"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                className="block text-primary text-sm font-bold mb-2"
-                htmlFor="email"
-              >
-                Email
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="email"
-                type="email"
-                placeholder="Your email"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                className="block text-primary text-sm font-bold mb-2"
-                htmlFor="subject"
-              >
-                Subject
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="subject"
-                type="text"
-                placeholder="Subject"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                className="block text-primary text-sm font-bold mb-2"
-                htmlFor="message"
-              >
-                Message
-              </label>
-              <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="message"
-                placeholder="Your message"
-              ></textarea>
-            </div>
-            <div className="flex items-center justify-center">
-              <button
-                className="bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-700 transition duration-300"
-                type="submit"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+          <ContactUsForm />
         </div>
       </div>
     </div>
