@@ -1,6 +1,5 @@
 import Page from "../layouts/page"; // Adjust the import path as needed
 import ContactUsSection from "../components/hompage/ContactUsSection";
-import Footer from "../components/Footer";
 
 const products = [
   {
