@@ -25,7 +25,7 @@ const Navbar = ({ onlyHome }: Props) => {
         { id: "#products", text: "Products" },
         { id: "#about", text: "About" },
         { id: "/products", text: "All Products", type: "link" },
-        { id: "#contact", text: "Contact" }
+        { id: "#contact", text: "Contact" },
       ];
 
   return (

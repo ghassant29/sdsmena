@@ -1,18 +1,13 @@
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const AboustUsSection = () => {
+const AboutUsSection = () => {
   return (
     <div
       id="about"
-      className="bg-white flex items-center justify-center flex-col md:flex-row py-28 gap-20 md:pl-6 px-12 md:px-0"
+      className="bg-white flex items-center justify-center flex-col md:flex-row py-28 px-12 md:px-0"
     >
-      <img
-        src="/images/about-us.png"
-        alt="About Us"
-        className="w-96 rounded-xl md:-rotate-6 border-8"
-      />
-      <div className="flex flex-col gap-4 max-w-2xl">
+      <div className="flex flex-col gap-4 max-w-3xl w-full">
         <div className="flex items-center">
           <FaChevronRight className="text-4xl font-bold text-black pt-1 pr-4" />
           <h2 className="text-2xl md:text-4xl font-bold text-black">
@@ -20,41 +15,23 @@ const AboustUsSection = () => {
           </h2>
         </div>
         <p className="text-black md:text-lg font-light">
-          Founded in 2012 in the Swiss community of Pfäffikon, SDS GmbH is still
-          committed to setting new quality standards in the printing and
-          packaging industry, saving its more than 400 customer companies
-          worldwide time, money and nerves. As an experienced team of problem
-          solvers and innovators, SDS GmbH has remained committed to the vision
-          of developing the world’s best seals for chambered doctor blade
-          systems. No avenue remains unexplored, no material untouched and no
-          testing phase too costly to ensure that this claim is met. The focus
-          of all our considerations: the customer. To achieve this, we combine
-          sound, technical knowledge from many years of experience in
-          Rotogravure and flexographic printing with modern design and
-          engineering expertise.
+          SDS MEA was established in 2024 to serve clients in the Middle East
+          and African markets with effective local support. Originating from the
+          Swiss company SDS GmbH, a premium provider of new quality standards in
+          the printing and packaging industry, SDS MEA benefits from a legacy of
+          excellence. With over 400 customers globally, we are uniquely
+          positioned to deliver outstanding solutions in this sector. SDS MEA
+          specializes in cutting-edge problem-solving and innovation, including
+          the development of the world’s best seals for chambered doctor blade
+          systems. With extensive experience in Rotogravure and flexographic
+          printing, combined with modern design and engineering expertise, we
+          are dedicated to providing exceptional local support to our customers
+          in the Middle East and Africa.
         </p>
         <div className="flex flex-col gap-6 mt-4">
           <div className="flex items-center">
-            <span className="text-4xl font-bold text-primary pr-4">400</span>
-            <p className="text-black md:text-lg font-light">
-              worldwide client companies
-            </p>
-          </div>
-          <div className="flex items-center">
-            <span className="text-4xl font-bold text-primary pr-4">2012</span>
-            <p className="text-black md:text-lg font-light">
-              founded in the Swiss municipality of Pfäffikon
-            </p>
-          </div>
-          <div className="flex items-center">
-            <img
-              src="./3M_wordmark.png"
-              alt="3M Logo"
-              className="w-13 h-7 mr-4"
-            />
-            <p className="text-black md:text-lg font-light">
-              Authorized Specialist Dealer
-            </p>
+            <p className="text-black md:text-lg font-light">Established in</p>
+            <span className="text-4xl font-bold text-primary pr-4">2024</span>
           </div>
         </div>
         <div className="mt-6">
@@ -70,4 +47,4 @@ const AboustUsSection = () => {
   );
 };
 
-export default AboustUsSection;
+export default AboutUsSection;
