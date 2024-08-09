@@ -21,9 +21,9 @@ const Navbar = ({ onlyHome }: Props) => {
   const navItems = onlyHome
     ? [{ id: "/", text: "Home" }]
     : [
-        { id: "/", text: "Home", type: "link" },
-        { id: "/products", text: "Products", type: "link" },
-        { id: "#about", text: "About" },
+        { id: "/", text: "Home" },
+        { id: "/products", text: "Products" },
+        { id: "/about_us", text: "About" },
         { id: "#contact", text: "Contact" }
       ];
 
