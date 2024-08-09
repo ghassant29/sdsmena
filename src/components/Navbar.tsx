@@ -21,22 +21,21 @@ const Navbar = ({ onlyHome }: Props) => {
   const navItems = onlyHome
     ? [{ id: "/", text: "Home" }]
     : [
-        { id: "#hero", text: "Home" },
-        { id: "#products", text: "Products" },
+        { id: "/", text: "Home", type: "link" },
+        { id: "/products", text: "Products", type: "link" },
         { id: "#about", text: "About" },
-        { id: "/products", text: "All Products", type: "link" },
         { id: "#contact", text: "Contact" }
       ];
 
   return (
-    <nav className="md:absolute md:top-0 md:left-0 flex justify-between px-8 md:px-0 md:justify-center items-center w-full mx-auto text-white bg-white">
+    <nav className="md:sticky z-50 md:top-0 md:left-0  flex justify-between px-8 md:px-0 md:justify-center items-center w-full mx-auto text-white bg-white shadow-sm">
       <div className="w-full block md:hidden">
         <img className="h-28 w-28" src="/logo.svg" />
       </div>
 
       <ul className="hidden md:flex md:items-center md:justify-center gap-8">
         <div>
-          <LogoSVG className="h-24 w-fit" />
+          <LogoSVG className="h-16 w-fit" clipped />
         </div>
         <div className="flex items-center justify-center gap-4">
           {navItems.map((item) => (
@@ -54,7 +53,7 @@ const Navbar = ({ onlyHome }: Props) => {
       <ul
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-300 bg-light ease-in-out duration-500 z-10"
+            ? "z-20 fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-300 bg-light ease-in-out duration-500 z-10"
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] z-10"
         }
       >
@@ -80,7 +79,7 @@ const Navbar = ({ onlyHome }: Props) => {
       {isMobile && (
         <div
           className={tw(
-            "fixed top-0 left-0 w-full h-full bg-black duration-300",
+            "fixed top-0 left-0 w-full h-full bg-black duration-300 z-10",
             nav
               ? "bg-opacity-50 pointer-events-auto"
               : "bg-opacity-0 pointer-events-none"

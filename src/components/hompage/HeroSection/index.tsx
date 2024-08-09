@@ -39,23 +39,23 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="w-full md:w-fit md:h-full bg-[#f5f5f5] h-auto flex flex-col items-center justify-center">
-      <div className=" md:w-3/4 w-full h-fit flex items-center justify-center md:p-10">
+    <div className="relative w-full md:w-fit md:h-fit bg-[#f5f5f5] h-auto flex flex-col items-center justify-center pb-10 md:pb-0">
+      <div className="md:w-3/4 w-full h-fit flex items-center justify-center md:p-10">
         <div className="text-left w-full">
           <Splide className="splide" options={slideOptions} onMove={handleMove}>
             {heroSectionsSlides.map((slide, index) => (
               <HeroSlide key={index} {...slide} />
             ))}
           </Splide>
-          <div
-            className="absolute left-0 bottom-0 h-1 bg-cpink"
-            style={{
-              width: `${progressWidth}%`,
-              transition: "width 0.1s linear"
-            }}
-          />
         </div>
       </div>
+      <div
+        className="absolute left-0 bottom-0 h-1 bg-cpink"
+        style={{
+          width: `${progressWidth}%`,
+          transition: "width 0.1s linear"
+        }}
+      />
     </div>
   );
 };
