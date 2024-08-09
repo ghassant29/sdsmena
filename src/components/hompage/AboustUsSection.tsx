@@ -1,12 +1,15 @@
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SectionHeader from "../SectionHeader";
 
 const AboutUsSection = () => {
   return (
     <div
       id="about"
-      className="bg-white flex items-center justify-center flex-col md:flex-row py-28 px-12 md:px-0"
+      className="bg-white flex items-center justify-center flex-col py-28 gap-20"
     >
+      <SectionHeader title="About Us" />
+
       <div className="flex flex-col gap-4 max-w-3xl w-full">
         <div className="flex items-center">
           <FaChevronRight className="text-4xl font-bold text-black pt-1 pr-4" />

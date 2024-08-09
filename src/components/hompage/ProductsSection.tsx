@@ -8,7 +8,7 @@ const ProductsSection = () => {
   return (
     <div
       id="products"
-      className="bg-white flex items-center justify-center flex-col py-28 gap-16"
+      className="bg-white flex items-center justify-center flex-col pt-20 gap-16"
     >
       <SectionHeader title="Products" />
 
