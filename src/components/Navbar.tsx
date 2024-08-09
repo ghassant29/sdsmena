@@ -53,7 +53,7 @@ const Navbar = ({ onlyHome }: Props) => {
       <ul
         className={
           nav
-            ? "z-20 fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-300 bg-light ease-in-out duration-500 z-10"
+            ? "z-20 fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-300 bg-light ease-in-out duration-500"
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] z-10"
         }
       >
