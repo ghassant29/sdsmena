@@ -15,7 +15,7 @@ export default {
         secondary: "#1F1F1F",
         tertiary: "#a0a0a0",
         cpink: "#e4137e",
-        cblue: "#189cd8",
+        cblue: "#00aeef",
         cyellow: "#f7e92a",
         dark: {
           DEFAULT: "#1f1f1f",
