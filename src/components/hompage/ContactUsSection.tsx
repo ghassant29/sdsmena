@@ -1,4 +1,5 @@
-import { CiLocationOn, CiPhone, CiMail } from "react-icons/ci";
+import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
+import SectionHeader from "../SectionHeader";
 import ContactUsForm from "./ContactUsForm";
 
 const ContactUsSection = () => {
@@ -7,6 +8,7 @@ const ContactUsSection = () => {
       id="services"
       className="bg-white flex items-center justify-center flex-col py-28 gap-16"
     >
+      <SectionHeader title="Contact Us" />
       <div className="flex items-start justify-center md:justify-start flex-col gap-6 text-center md:pr-16 ">
         <h1 className="text-primary font-bold text-4xl md:text-5xl md:w-fit w-full">
           Let’s Get In Touch

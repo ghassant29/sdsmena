@@ -8,7 +8,7 @@ const AboutUsSection = () => {
   return (
     <div
       id="about"
-      className="bg-white flex items-center justify-center flex-col py-28 gap-20"
+      className="bg-white flex items-center justify-center flex-col pt-28 gap-20"
     >
       <SectionHeader title="About Us" />
 
