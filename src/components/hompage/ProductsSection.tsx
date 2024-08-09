@@ -16,7 +16,7 @@ const ProductsSection = () => {
         {featuredCategories.map((category) => (
           <div
             key={category.id}
-            className="flex flex-col items-stretch justify-between gap-6 shadow rounded-lg"
+            className="flex flex-col items-stretch justify-between gap-6 shadow rounded-lg hover:shadow-md transition-shadow"
           >
             <img
               src={category.image}
@@ -36,7 +36,7 @@ const ProductsSection = () => {
               <div className="flex-shrink-0 mt-4">
                 <Link
                   to={`products/${category.id}`}
-                  className="bg-cblue text-white py-2 px-4 rounded-md"
+                  className="bg-cblue text-white py-2 px-4 rounded-md hover:bg-cblue/80 transition-colors"
                 >
                   Learn More
                   <BiLinkExternal className="inline-block ml-2" />
