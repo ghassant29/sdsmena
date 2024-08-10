@@ -8,10 +8,9 @@ import { navItems } from "../../../utils/navbar/constants";
 import { tw } from "../../../utils/tw";
 import NavLink from "./NavLink";
 
-interface MobileNavProps {}
-
-const MobileNav: React.FC<MobileNavProps> = ({}) => {
+const MobileNav: React.FC = () => {
   const [nav, setNav] = useState(false);
+  // eslint-disable-next-line no-empty-pattern
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
 
   const handleNav = () => setNav((prev) => !prev);

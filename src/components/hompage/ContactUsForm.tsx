@@ -55,7 +55,7 @@ const ContactUsForm = () => {
         "5n9tfWh6PUyAN6F0_"
       )
       .then(
-        (result) => {
+        () => {
           setStatusMessage(
             "Thank you for your reach. We'll get back to you soon."
           );

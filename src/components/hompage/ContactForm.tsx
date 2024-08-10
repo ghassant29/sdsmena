@@ -1,8 +1,6 @@
 import { BsSend } from "react-icons/bs";
 
-interface ContactFormProps {}
-
-const ContactForm: React.FC<ContactFormProps> = ({}) => {
+const ContactForm: React.FC = () => {
   return (
     <section className="text-gray-600 body-font relative max-w-7xl">
       <div className="container px-5 mx-auto flex sm:flex-nowrap flex-wrap">
