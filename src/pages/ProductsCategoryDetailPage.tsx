@@ -1,4 +1,5 @@
 import { CgArrowRight } from "react-icons/cg";
+import { TbLocationQuestion } from "react-icons/tb";
 import { Link, useParams } from "react-router-dom";
 import ContactUsSection from "../components/hompage/ContactUsSection";
 import ProductCard from "../components/hompage/ProductCard";
@@ -17,7 +18,6 @@ const ProductsCategoryDetailPage = () => {
     .map((product) => Object.values(product).flat())
     .flat()
     .find((product) => product.id === productId);
-  console.log(category);
 
   if (!category) return <NotFoundPage />;
 
@@ -57,7 +57,7 @@ const ProductsCategoryDetailPage = () => {
       </div>
 
       {category.products && category.products.length > 0 && (
-        <div className="w-full bg-white flex items-center justify-center pt-20 pb-16 flex-col gap-8">
+        <div className="w-full bg-white flex items-center justify-center pt-20 flex-col gap-8">
           <div className="w-11/12 md:w-3/4 flex items-start justify-center flex-col gap-8">
             <div className="flex items-start justify-center flex-col gap-1 text-center">
               <span className="text-black font-medium text-md md:text-2xl leading-tight text-left">
@@ -87,6 +87,16 @@ const ProductsCategoryDetailPage = () => {
                 ) : null
               )}
             </div>
+          </div>
+
+          <div className="w-fit flex items-center justify-center flex-col gap-4 mt-8">
+            <Link
+              to={Routes.CONTACT}
+              className="bg-cblue rounded-lg text-white font-medium text-sm md:text-md leading-tight p-4 w-full text-center mt-4 hover:bg-cblue/80 transition-all"
+            >
+              Request more products
+              <TbLocationQuestion className="inline-block ml-2" />
+            </Link>
           </div>
         </div>
       )}

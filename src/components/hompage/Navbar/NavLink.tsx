@@ -1,6 +1,6 @@
 import { cloneElement, Fragment, ReactElement, useState } from "react";
 import { BiChevronDown } from "react-icons/bi";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useMobile from "../../../hooks/useMobile";
 import { NavItem } from "../../../types/navbar";
 import { tw } from "../../../utils/tw";
@@ -18,6 +18,8 @@ const NavLink = ({ href, text, subItems, className, onClick }: Props) => {
   const isMobile = useMobile();
   const location = useLocation();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const isActive = location.pathname === href || location.hash === href;
   const haveSubMenu = subItems && subItems.length > 0;
@@ -60,6 +62,10 @@ const NavLink = ({ href, text, subItems, className, onClick }: Props) => {
             >
               {subItems.map((item) => (
                 <Link
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setDropdownOpen(false);
+                  }}
                   key={item.id}
                   to={item.id}
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -91,7 +97,21 @@ const NavLink = ({ href, text, subItems, className, onClick }: Props) => {
 
   const element: ReactElement =
     href.startsWith("/") || href.startsWith("#") ? (
-      <Link to={href} />
+      haveSubMenu ? (
+        <button
+          {...commonProps}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            navigate(href);
+          }}
+        >
+          <span>{text}</span>
+          <BiChevronDown className="inline-block ml-1.5" />
+        </button>
+      ) : (
+        <Link to={href} />
+      )
     ) : (
       <button onClick={onClick} />
     );

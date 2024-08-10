@@ -1,5 +1,4 @@
 import { CgArrowRight } from "react-icons/cg";
-import { TbLocationQuestion } from "react-icons/tb";
 import { Link, useParams } from "react-router-dom";
 import ContactUsSection from "../components/hompage/ContactUsSection";
 import ProductCard from "../components/hompage/ProductCard";
@@ -93,15 +92,6 @@ const ProductsCategoryPage = () => {
               ) : null
             )}
           </div>
-        </div>
-        <div className="w-fit flex items-center justify-center flex-col gap-4">
-          <Link
-            to={Routes.CONTACT}
-            className="bg-cblue rounded-lg text-white font-medium text-sm md:text-md leading-tight p-4 w-full text-center mt-4 hover:bg-cblue/80 transition-all"
-          >
-            Request more products
-            <TbLocationQuestion className="inline-block ml-2" />
-          </Link>
         </div>
       </div>
 

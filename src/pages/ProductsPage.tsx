@@ -1,10 +1,37 @@
+import { useMemo } from "react";
 import ContactUsSection from "../components/hompage/ContactUsSection";
 import ProductCard from "../components/hompage/ProductCard";
 import SectionHeader from "../components/SectionHeader";
 import Page from "../layouts/page"; // Adjust the import path as needed
-import { printers } from "../utils/products/constants";
+import { Product, ProductsCategory, ProductTypeEnum } from "../types/products";
+import { printers, products } from "../utils/products/constants";
+
+const flattenProducts = (
+  products: Partial<Record<ProductTypeEnum, ProductsCategory>>[]
+) => {
+  return products.flatMap((productCategory) =>
+    Object.values(productCategory).flatMap(
+      (category) => category.products || []
+    )
+  );
+};
+
+const getRandomProducts = (products: Product[], count: number) => {
+  const shuffled = [...products].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+};
 
 const AllProducts = () => {
+  const flattenedProducts = useMemo(
+    () => flattenProducts(products),
+    [products]
+  );
+
+  const selectedProducts = useMemo(
+    () => getRandomProducts(flattenedProducts, 6),
+    [flattenedProducts]
+  );
+
   return (
     <Page title="Products">
       <div className="w-full bg-white flex items-center justify-center pt-20 pb-16 flex-col gap-8 px-8">
@@ -36,8 +63,6 @@ const AllProducts = () => {
       </div>
 
       <div className="w-full bg-white flex items-center justify-center pt-20 pb-16 flex-col gap-8">
-        {/* Printer */}
-
         <div className="w-11/12 md:w-3/4 flex items-center md:items-start justify-center flex-col gap-8">
           <div className="flex items-start justify-center flex-col gap-1 text-center">
             <span className="text-black font-medium text-md md:text-2xl leading-tight text-left">
@@ -79,8 +104,8 @@ const AllProducts = () => {
               }}
             />
           </div>
-          <div className="w-full flex items-center justify-center md:justify-start  gap-10 flex-wrap">
-            {printers.map((printer) => (
+          <div className="w-full flex items-center justify-evenly gap-10 flex-wrap">
+            {selectedProducts.map((printer) => (
               <ProductCard
                 key={printer.id}
                 productId={printer.id}

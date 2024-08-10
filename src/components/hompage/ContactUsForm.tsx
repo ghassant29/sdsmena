@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
 
 const ContactUsForm = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -7,7 +7,7 @@ const ContactUsForm = () => {
     user_name: "",
     user_email: "",
     subject: "",
-    message: "",
+    message: ""
   });
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -15,7 +15,7 @@ const ContactUsForm = () => {
     user_name: false,
     user_email: false,
     subject: false,
-    message: false,
+    message: false
   });
 
   const handleChange = (
@@ -38,7 +38,7 @@ const ContactUsForm = () => {
       user_name: !formData.user_name,
       user_email: !formData.user_email || !validateEmail(formData.user_email),
       subject: !formData.subject,
-      message: !formData.message,
+      message: !formData.message
     };
 
     if (Object.values(newErrors).some((error) => error)) {
@@ -56,7 +56,6 @@ const ContactUsForm = () => {
       )
       .then(
         (result) => {
-          console.log("SUCCESS!", result.text);
           setStatusMessage(
             "Thank you for your reach. We'll get back to you soon."
           );
@@ -66,7 +65,7 @@ const ContactUsForm = () => {
             user_name: "",
             user_email: "",
             subject: "",
-            message: "",
+            message: ""
           });
         },
         (error) => {
