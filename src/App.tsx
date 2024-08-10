@@ -1,10 +1,11 @@
 import { useRoutes } from "react-router-dom";
 import HomepageProvider from "./context/providers/homepage.provider";
-import AllProducts from "./pages/allProducts";
-import Homepage from "./pages/homepage";
-import NotFoundPage from "./pages/not_found";
-import ProductPage from "./pages/product";
-import AboutUsPage from "./pages/aboutus_page"; // Import the About Us page
+import AboutUsPage from "./pages/AboutUsPage"; // Import the About Us page
+import ContactPage from "./pages/ContactPage";
+import Homepage from "./pages/HomePage";
+import NotFoundPage from "./pages/NotFound";
+import ProductPage from "./pages/ProductPage";
+import AllProducts from "./pages/ProductsPage";
 import Routes from "./routes";
 
 function App() {
@@ -15,24 +16,28 @@ function App() {
         <HomepageProvider>
           <Homepage />
         </HomepageProvider>
-      ),
+      )
     },
     {
       path: Routes.PRODUCT_DETAIL,
-      element: <ProductPage />,
+      element: <ProductPage />
     },
     {
       path: Routes.PRODUCTS,
-      element: <AllProducts />,
+      element: <AllProducts />
+    },
+    {
+      path: Routes.CONTACT,
+      element: <ContactPage />
     },
     {
       path: Routes.ABOUT_US, // Add this route
-      element: <AboutUsPage />,
+      element: <AboutUsPage />
     },
     {
       path: "*",
-      element: <NotFoundPage />,
-    },
+      element: <NotFoundPage />
+    }
   ]);
 }
 

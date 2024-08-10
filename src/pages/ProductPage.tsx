@@ -2,7 +2,7 @@ import "react-photo-view/dist/react-photo-view.css";
 import { useParams } from "react-router-dom";
 import Page from "../layouts/page";
 import { productsDetails } from "../utils/constants";
-import NotFoundPage from "./not_found";
+import NotFoundPage from "./NotFound";
 
 const ProductPage = () => {
   const { productId } = useParams();
