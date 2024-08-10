@@ -6,6 +6,8 @@ import ContactPage from "./pages/ContactPage";
 import Homepage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFound";
 import ProductPage from "./pages/ProductPage";
+import ProductsCategoryDetailPage from "./pages/ProductsCategoryDetailPage";
+import ProductsCategoryPage from "./pages/ProductsCategoryPage";
 import AllProducts from "./pages/ProductsPage";
 import Routes from "./routes";
 
@@ -34,6 +36,14 @@ function App() {
     {
       path: Routes.CATEGORY,
       element: <CategoryPage />
+    },
+    {
+      path: Routes.PRODUCTS_CATEGORY,
+      element: <ProductsCategoryPage />
+    },
+    {
+      path: Routes.PRODUCTS_CATEGORY_DETAIL,
+      element: <ProductsCategoryDetailPage />
     },
     {
       path: Routes.ABOUT_US, // Add this route

@@ -58,7 +58,7 @@ const CaterogyPage = () => {
 
       <div className="w-full bg-white flex items-center justify-center pt-20 pb-16 flex-col gap-8">
         <div className="w-11/12 md:w-3/4 flex items-start justify-center flex-col gap-8">
-          <div className="flex items-start justify-center flex-col gap-1 text-center ml-12">
+          <div className="flex items-start justify-center flex-col gap-1 text-center">
             <span className="text-black font-medium text-md md:text-2xl leading-tight text-left">
               Various products
             </span>

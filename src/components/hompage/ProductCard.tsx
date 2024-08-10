@@ -29,7 +29,7 @@ const ProductCard = ({
         className="w-full object-cover max-h-[230px] min-h-[230px]"
       />
       <div className="flex flex-col items-center justify-center gap-4 p-4">
-        <h1 className="text-black font-medium text-md md:text-2xl leading-tight">
+        <h1 className="text-black font-medium text-md md:text-2xl leading-tight text-center">
           {name}
         </h1>
         {subTitle && (
