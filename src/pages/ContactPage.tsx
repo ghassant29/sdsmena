@@ -1,5 +1,5 @@
 import ContactUsSection from "../components/hompage/ContactUsSection";
-import Page from "../layouts/page"; // Adjust the import path as needed
+import Page from "../layouts/page";
 
 const ContactPage = () => {
   return (

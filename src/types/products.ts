@@ -6,9 +6,33 @@ export enum ProdcutsCategoryEnum {
   SPLICING_TAPE = "splicing_tape"
 }
 
-export type FeatureProductCategory = {
+export enum PrinterTypeEnum {
+  FLEXOGRAPHY = "flexography",
+  ROTOGRAVURE = "rotogravure"
+}
+
+export type ProductCategory = {
   id: ProdcutsCategoryEnum;
   name: string;
   description: string;
   image: string;
+};
+
+export type Printer = {
+  id: PrinterTypeEnum;
+  name: string;
+  subTitle: string;
+  description: string;
+  image: string;
+  relatedCategories: ProdcutsCategoryEnum[];
+};
+
+export type Product = {
+  id: string;
+  name: string;
+  description: string;
+  category: ProdcutsCategoryEnum;
+  printerType: PrinterTypeEnum;
+  image: string;
+  relatedKeywords?: string[];
 };

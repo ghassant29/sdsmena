@@ -1,9 +1,11 @@
 import {
-  FeatureProductCategory,
-  ProdcutsCategoryEnum
+  Printer,
+  PrinterTypeEnum,
+  ProdcutsCategoryEnum,
+  ProductCategory
 } from "../../types/products";
 
-export const featuredCategories: Array<FeatureProductCategory> = [
+export const featuredCategories: Array<ProductCategory> = [
   {
     id: ProdcutsCategoryEnum.CHAMBER_BLADE_END_SEALS,
     name: "Chamber Blade End Seals",
@@ -38,5 +40,37 @@ export const featuredCategories: Array<FeatureProductCategory> = [
     description:
       "For splicing film and foil webs at process speeds\n\nFor flying reel changes\n\nSplicing leaves no residue\n\nNo cleaning of fiber residues required",
     image: "/products/category/splicing_tape.jpg"
+  }
+];
+
+export const printers: Array<Printer> = [
+  {
+    id: PrinterTypeEnum.FLEXOGRAPHY,
+    name: "Flexography",
+    subTitle:
+      "Top quality in flexographic printing – with the right consumables!",
+    description:
+      "We pursue one goal: <b>To help you achieve the highest possible quality with the best possible efficiency!</b> With our wide range of products, we want to meet your individual requirements and exceed your expectations.",
+    image: "/products/printers/flexography.jpeg",
+    relatedCategories: [
+      ProdcutsCategoryEnum.CHAMBER_BLADE_END_SEALS,
+      ProdcutsCategoryEnum.DOCTOR_BLADE,
+      ProdcutsCategoryEnum.PLATE_MOUNTING_TAPE,
+      ProdcutsCategoryEnum.SPLICING_TAPE,
+      ProdcutsCategoryEnum.DETERGENT
+    ]
+  },
+  {
+    id: PrinterTypeEnum.ROTOGRAVURE,
+    name: "Rotogravure",
+    subTitle: "Top quality gravure printing – with the right consumables!",
+    description:
+      "We pursue one goal: <b>to help you achieve the highest possible quality with the best possible efficiency!</b> With our wide range of products, we want to meet your individual requirements and exceed your expectations..",
+    image: "/products/printers/rotogravure.jpeg",
+    relatedCategories: [
+      ProdcutsCategoryEnum.DOCTOR_BLADE,
+      ProdcutsCategoryEnum.DETERGENT,
+      ProdcutsCategoryEnum.SPLICING_TAPE
+    ]
   }
 ];
