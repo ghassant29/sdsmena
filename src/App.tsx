@@ -1,6 +1,5 @@
 import { useRoutes } from "react-router-dom";
 import HomepageProvider from "./context/providers/homepage.provider";
-import AboutUsPage from "./pages/AboutUsPage"; // Import the About Us page
 import CategoryPage from "./pages/CategoryPage";
 import ContactPage from "./pages/ContactPage";
 import Homepage from "./pages/HomePage";
@@ -45,10 +44,10 @@ function App() {
       path: Routes.PRODUCTS_CATEGORY_DETAIL,
       element: <ProductsCategoryDetailPage />
     },
-    {
-      path: Routes.ABOUT_US, // Add this route
-      element: <AboutUsPage />
-    },
+    // {
+    //   path: Routes.ABOUT_US, // Add this route
+    //   element: <AboutUsPage />
+    // },
     {
       path: "*",
       element: <NotFoundPage />

@@ -26,6 +26,6 @@ export const navItems: Array<NavItem> = [
       }
     ]
   },
-  { id: "/about_us", text: "About" },
+  // { id: "/about_us", text: "About" },
   { id: "/contact", text: "Contact" }
 ];
