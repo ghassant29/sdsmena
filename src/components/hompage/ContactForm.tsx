@@ -28,11 +28,21 @@ const ContactForm: React.FC = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-red-500 leading-relaxed">sds@email.com</a>
+              <a
+                className="text-red-500 leading-relaxed"
+                href="mailto:sds@email.com"
+              >
+                sds@email.com
+              </a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">123-456-7890</p>
+              <a
+                href="tel:123-456-7890"
+                className="text-red-500 leading-relaxed"
+              >
+                123-456-7890
+              </a>
             </div>
           </div>
         </div>
