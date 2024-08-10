@@ -25,13 +25,15 @@ const AboutUsSection = () => {
           Swiss company SDS GmbH, a premium provider of new quality standards in
           the printing and packaging industry, SDS MEA benefits from a legacy of
           excellence. With over 400 customers globally, we are uniquely
-          positioned to deliver outstanding solutions in this sector. SDS MEA
-          specializes in cutting-edge problem-solving and innovation, including
-          the development of the world’s best seals for chambered doctor blade
-          systems. With extensive experience in Rotogravure and flexographic
-          printing, combined with modern design and engineering expertise, we
-          are dedicated to providing exceptional local support to our customers
-          in the Middle East and Africa.
+          positioned to deliver outstanding solutions in this sector.
+          <br />
+          <br />
+          SDS MEA specializes in cutting-edge problem-solving and innovation,
+          including the development of the world’s best seals for chambered
+          doctor blade systems. With extensive experience in Rotogravure and
+          flexographic printing, combined with modern design and engineering
+          expertise, we are dedicated to providing exceptional local support to
+          our customers in the Middle East and Africa.
         </p>
         <div className="flex flex-col mt-4">
           <div className="flex items-center gap-2">

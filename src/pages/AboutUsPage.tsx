@@ -1,10 +1,10 @@
 import { FaChevronRight } from "react-icons/fa";
-import Page from "../layouts/page"; // Adjust the import path as needed
 import ContactUsSection from "../components/hompage/ContactUsSection";
+import Page from "../layouts/page"; // Adjust the import path as needed
 
 const AboutUsPage = () => {
   return (
-    <Page onlyHome title="About Us">
+    <Page title="About Us">
       <div className="about-us-page bg-secondary flex flex-col items-center justify-center py-28 gap-20 px-12 md:px-0">
         <section className="intro-section bg-white flex flex-col md:flex-row items-center justify-center md:justify-between p-8 rounded-lg shadow-lg w-full max-w-6xl">
           <img
