@@ -21,7 +21,7 @@ const ProductCard = ({
     <Link
       key={productId}
       to={link}
-      className="w-fit max-w-[350px] bg-[#f5f5f5] rounded-lg flex items-center justify-center flex-col gap-4 border overflow-hidden hover:shadow-sm hover:border-cblue transition-all"
+      className="w-fit min-w-[350px] max-w-[350px] bg-[#f5f5f5] rounded-lg flex items-center justify-center flex-col gap-4 border overflow-hidden hover:shadow-sm hover:border-cblue transition-all"
     >
       <img
         src={image}

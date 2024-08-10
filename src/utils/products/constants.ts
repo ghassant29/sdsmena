@@ -50,7 +50,7 @@ export const printers: Array<Printer> = [
     subTitle:
       "Top quality in flexographic printing – with the right consumables!",
     description:
-      "We pursue one goal: <b>To help you achieve the highest possible quality with the best possible efficiency!</b> With our wide range of products, we want to meet your individual requirements and exceed your expectations.",
+      "We pursue one goal: <b>to help you achieve the highest possible quality with the best possible efficiency!</b> With our wide range of products, we want to meet your individual requirements and exceed your expectations.",
     image: "/products/printers/flexography.jpeg",
     relatedCategories: [
       ProdcutsCategoryEnum.CHAMBER_BLADE_END_SEALS,
@@ -65,7 +65,7 @@ export const printers: Array<Printer> = [
     name: "Rotogravure",
     subTitle: "Top quality gravure printing – with the right consumables!",
     description:
-      "We pursue one goal: <b>to help you achieve the highest possible quality with the best possible efficiency!</b> With our wide range of products, we want to meet your individual requirements and exceed your expectations..",
+      "We pursue one goal: <b>to help you achieve the highest possible quality with the best possible efficiency!</b> With our wide range of products, we want to meet your individual requirements and exceed your expectations.",
     image: "/products/printers/rotogravure.jpeg",
     relatedCategories: [
       ProdcutsCategoryEnum.DOCTOR_BLADE,
